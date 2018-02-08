@@ -129,7 +129,7 @@
                 autoLoad: true,
                 context: this.getContext().getDataContext(),
                 requester: this,
-                fetch: ['FormattedID', 'Name', 'ScheduleState'],
+                fetch: ['FormattedID', 'Name', 'Tags', 'ScheduleState'], // added Tags for ATT - ARL - 08.02.2018
                 filters: [this.getContext().getTimeboxScope().getQueryFilter()],
                 sorters: [{
                     property: 'Rank',
@@ -148,6 +148,7 @@
                 columnCfgs: [
                     'FormattedID',
                     'Name',
+                    'Tags', // added Tags for ATT - ARL - 08.02.2018
                     'ScheduleState'
                 ]
             }, config);
